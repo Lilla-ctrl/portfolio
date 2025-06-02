@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Lilla Tóth Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
@@ -10,6 +10,55 @@
     <div
       class="container w-full max-w-screen-md md:max-w-screen-lg xl:max-w-[1000px] mx-auto px-4"
     >
+      <nav class="bg-white shadow-md">
+        <div
+          class="max-w-[1000px] mx-auto px-4 py-3 flex items-center justify-between"
+        >
+          <a href="#" class="text-xl font-semibold text-teal-600">Lilla Tóth</a>
+
+          <!-- Hamburger icon -->
+          <button
+            id="menu-btn"
+            class="md:hidden text-gray-700 focus:outline-none"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+
+          <!-- Desktop menu -->
+          <div id="menu" class="hidden md:flex space-x-6">
+            <a href="#" class="text-gray-700 hover:text-teal-600">Home</a>
+            <a href="#" class="text-gray-700 hover:text-teal-600">Projects</a>
+            <a href="#" class="text-gray-700 hover:text-teal-600">About</a>
+            <a href="#" class="text-gray-700 hover:text-teal-600">Contact</a>
+          </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2">
+          <a href="#" class="block text-gray-700 hover:text-teal-600">Home</a>
+          <a href="#" class="block text-gray-700 hover:text-teal-600"
+            >Projects</a
+          >
+          <a href="#" class="block text-gray-700 hover:text-teal-600">About</a>
+          <a href="#" class="block text-gray-700 hover:text-teal-600"
+            >Contact</a
+          >
+        </div>
+      </nav>
+
       <header
         class="bg-gray-100 p-10 max-w-[1000px] mx-auto flex flex-col md:flex-row items-center gap-6"
       >
@@ -36,5 +85,16 @@
         </div>
       </header>
     </div>
+
+    <script>
+      (() => {
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        menuBtn.addEventListener("click", () => {
+          mobileMenu.classList.toggle("hidden");
+        });
+      })();
+    </script>
   </body>
 </html>
