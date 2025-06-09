@@ -3,7 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Lilla Tóth Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Lilla Tóth, a front-end developer skilled in HTML, CSS, JavaScript, React, and responsive web design. View projects, skills, and contact info."
+    />
+    <meta
+      property="og:title"
+      content="Lilla Tóth | Front-End Developer Portfolio"
+    />
+    <meta
+      property="og:description"
+      content="Browse my front-end projects and get in touch. Let's build something beautiful together."
+    />
+    <meta
+      property="og:image"
+      content="https://lilla-frontend.netlify.app/media/preview.img"
+    />
+    <meta property="og:url" content="https://lilla-frontend.netlify.app/" />
+    <meta property="og:type" content="website" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>Lilla Tóth | Front-End Developer Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
@@ -15,8 +37,8 @@
           class="max-w-[1000px] mx-auto px-4 py-3 flex items-center justify-between"
         >
           <a href="#home" class="text-xl font-semibold text-teal-600"
-            >Lilla Tóth</a
-          >
+            ><img src="./media/logo.png" alt="LT logo" class="h-14 w-auto"
+          /></a>
 
           <!-- Hamburger icon -->
           <button
@@ -41,15 +63,21 @@
 
           <!-- Desktop menu -->
           <div id="menu" class="hidden md:flex space-x-6">
-            <a href="#home" class="text-gray-700 hover:text-teal-600">Home</a>
-            <a href="#projects" class="text-gray-700 hover:text-teal-600"
+            <a href="#home" class="text-gray-700 hover:text-teal-600 text-xl"
+              >Home</a
+            >
+            <a
+              href="#projects"
+              class="text-gray-700 hover:text-teal-600 text-xl"
               >Projects</a
             >
-            <a href="#about" class="text-gray-700 hover:text-teal-600">About</a>
-            <a href="#skills" class="text-gray-700 hover:text-teal-600"
+            <a href="#about" class="text-gray-700 hover:text-teal-600 text-xl"
+              >About</a
+            >
+            <a href="#skills" class="text-gray-700 hover:text-teal-600 text-xl"
               >Skills</a
             >
-            <a href="#contact" class="text-gray-700 hover:text-teal-600"
+            <a href="#contact" class="text-gray-700 hover:text-teal-600 text-xl"
               >Contact</a
             >
           </div>
@@ -460,6 +488,9 @@
           >
           <span class="bg-gray-100 text-teal-700 font-medium px-2 py-1 rounded"
             >Figma</span
+          >
+          <span class="bg-gray-100 text-teal-700 font-medium px-2 py-1 rounded"
+            >SEO</span
           >
         </div>
       </section>
