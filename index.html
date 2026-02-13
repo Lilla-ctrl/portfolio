@@ -108,7 +108,7 @@
 
       <header
         id="home"
-        class="bg-gray-100 p-10 mb-12 max-w-[1000px] mx-auto flex flex-col md:flex-row items-center gap-6 rounded-xl shadow-md border border-gray-200"
+        class="bg-gray-100 p-10 mb-6 max-w-[1000px] mx-auto flex flex-col md:flex-row items-center gap-6 rounded-xl shadow-md border border-gray-200"
       >
         <div class="flex-shrink-0 max-w-[250px] w-full md:w-auto">
           <img
@@ -127,74 +127,52 @@
           <a
             class="inline-block text-white font-medium mt-4 bg-teal-600 px-6 py-3 rounded-full hover:bg-teal-700 transition"
             href="./files/Lilla-Toth-CV.pdf"
-            download
+            download="Lilla-Toth-CV"
             >Download CV</a
           >
         </div>
       </header>
-      <section id="projects">
-        <h1 class="font-medium text-3xl m-3 text-teal-600 mt-5 mb-6">
-          Projects
-        </h1>
-        <div
-          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 grid-cols-1 gap-6 justify-items-center"
-        >
-          <div class="text-center sm:text-left w-full max-w-[400px]">
-            <div
-              class="shadow-lg rounded-xl overflow-hidden hover:shadow-2xl transition transform hover:scale-105"
-            >
-              <div class="bg-gray-200 h-6 flex items-center px-3 space-x-2">
-                <span class="w-3 h-3 rounded-full bg-red-400"></span>
-                <span class="w-3 h-3 rounded-full bg-yellow-400"></span>
-                <span class="w-3 h-3 rounded-full bg-green-400"></span>
-              </div>
-              <img
-                src="./media/dictionary-screenshot.png"
-                alt="Screenshot of the React Dictionary project"
-                class="aspect-video object-cover"
-              />
-            </div>
-            <h2 class="font-medium text-xl my-3 text-gray-800">
-              React Dictionary
+      <section id="projects" class="mb-6">
+        <h1 class="font-medium text-3xl text-teal-600 ml-2">Projects</h1>
+        <!-- Job Tracker Card -->
+        <div class="flex flex-col md:flex-row items-center gap-10 px-2 py-4">
+          <!-- Job Tracker Content -->
+          <div class="w-full md:w-1/2 space-y-4 p-2">
+            <h2 class="text-2xl font-semibold text-gray-800">
+              React Job Tracker with Backend
             </h2>
-            <p class="text-gray-800">
-              A responsive React-based dictionary app that provides word
-              meanings, synonyms, example sentences, and related images. It uses
-              an external API to fetch data dynamically and showcases my skills
-              in React components. The app features a clean design with
-              intuitive navigation, ensuring a smooth user experience across
-              devices.
+            <p class="text-gray-600 leading-relaxed text-justify">
+              A high-performance job application tracker built with React and
+              Supabase. This application features a secure, real-time database
+              architecture, moving beyond static storage to offer true data
+              persistence across sessions. I engineered a centralized state
+              management system to handle complex CRUD operations, ensuring a
+              seamless user experience for managing the entire job search
+              lifecycle within a responsive, Tailwind-powered interface.
             </p>
-            <div class="my-3">
-              <span
-                class="bg-teal-100 text-teal-700 text-sm font-medium px-2 py-1 rounded"
-                >React</span
-              >
-              <span
-                class="bg-teal-100 text-teal-700 text-sm font-medium px-2 py-1 rounded"
-                >API</span
-              >
-              <span
-                class="bg-teal-100 text-teal-700 text-sm font-medium px-2 py-1 rounded"
-                >Responsive</span
-              >
-            </div>
-            <div class="my-3">
+            <ul class="text-teal-700 font-medium space-y-1">
+              <li>• Built with React & Supabase</li>
+              <li>• Managed real-time PostgreSQL data persistence</li>
+            </ul>
+            <div class="flex justify-center gap-4 pt-2">
               <a
-                href="https://monumental-eclair-dbd671.netlify.app/"
+                href="https://career-horizon-job-tracker.netlify.app/"
                 target="_blank"
-                class="font-medium text-teal-700"
+                rel="noopener noreferrer"
+                class="bg-teal-600 text-white px-6 py-2 rounded-xl hover:bg-teal-700"
                 >Live Demo</a
               >
               <a
-                href="https://github.com/Lilla-ctrl/react-dictionary.git"
+                href="https://github.com/Lilla-ctrl/supabase-job-app-tracker.git"
                 target="_blank"
-                class="font-medium text-teal-700 mx-3"
-                >Code</a
+                rel="noopener noreferrer"
+                class="border border-teal-600 text-teal-600 px-6 py-2 rounded-xl hover:bg-teal-50"
+                >View Code</a
               >
             </div>
           </div>
-          <div class="text-center sm:text-left w-full max-w-[400px]">
+          <!-- Job Tracker Screenshot -->
+          <div class="w-full md:w-1/2">
             <div
               class="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition transform hover:scale-105"
             >
@@ -204,157 +182,59 @@
                 <span class="w-3 h-3 rounded-full bg-green-400"></span>
               </div>
               <img
-                src="./media/job-tracker-screenshot.PNG"
+                src="./media/job-tracker-screenshot.png"
                 alt="Screenshot of the React Job Application Tracker project"
                 class="aspect-video object-cover"
               />
             </div>
-            <h2 class="font-medium text-xl my-3 text-gray-800">
-              React Job Application Tracker
+          </div>
+        </div>
+        <!-- Figma to Code Card -->
+        <div
+          class="flex flex-col md:flex-row-reverse items-center gap-10 bg-gray-100 rounded-xl shadow-lg px-2 py-4"
+        >
+          <!-- Figma to Code Content -->
+          <div class="w-full md:w-1/2 space-y-4 p-2">
+            <h2 class="font-semibold text-2xl my-3 text-gray-800">
+              Figma to Code Challenge
             </h2>
-            <p class="text-gray-800">
-              A fully interactive React app designed to manage job applications
-              with ease. Users can add, edit, and delete job entries, and all
-              data is saved automatically using localStorage to persist between
-              sessions. The project uses reusable components (modal forms, job
-              cards), manages complex state logic cleanly, and features a sleek,
-              responsive UI styled entirely with Tailwind CSS.
+            <p class="text-gray-600 leading-relaxed text-justify">
+              I engineered a responsive "Wheel of Time" fan site by adapting and
+              re-skinning a professional Lisbon travel design. This required
+              more than just coding; I had to interpret the original UX
+              structure and translate it into a high-fidelity, thematic
+              experience. Using CSS Grid and Flexbox, I ensured the layout
+              remains 1:1 with the design's integrity while engineering a
+              unique, content-driven interface from scratch.
             </p>
-            <div class="my-3">
-              <span
-                class="bg-teal-100 text-teal-700 text-sm font-medium px-2 py-1 rounded"
-                >React Hooks</span
-              >
-              <span
-                class="bg-teal-100 text-teal-700 text-sm font-medium px-2 py-1 rounded"
-                >Tailwind CSS</span
-              >
-              <span
-                class="bg-teal-100 text-teal-700 text-sm font-medium px-2 py-1 rounded"
-                >localStorage</span
-              >
-            </div>
-            <div class="my-3">
+            <ul class="text-teal-700 font-medium space-y-1">
+              <li>
+                • Engineered a scalable CSS architecture using Grid and Flexbox
+              </li>
+              <li>
+                • Translated high-fidelity designs into a fully responsive,
+                semantic layout
+              </li>
+            </ul>
+            <div class="flex justify-center gap-4 pt-2">
               <a
-                href="https://lucent-bonbon-38a102.netlify.app/"
+                href="https://taupe-travesseiro-6e96eb.netlify.app/"
                 target="_blank"
-                class="font-medium text-teal-700"
+                rel="noopener noreferrer"
+                class="bg-teal-600 text-white px-6 py-2 rounded-xl hover:bg-teal-700"
                 >Live Demo</a
               >
               <a
-                href="https://github.com/Lilla-ctrl/job-app-tracker.git"
+                href="https://github.com/Lilla-ctrl/responsive-project-wheel-of-time.git"
                 target="_blank"
-                class="font-medium text-teal-700 mx-3"
-                >Code</a
+                rel="noopener noreferrer"
+                class="border border-teal-600 text-teal-600 px-6 py-2 rounded-xl hover:bg-teal-50"
+                >View Code</a
               >
             </div>
           </div>
-          <div class="text-center sm:text-left w-full max-w-[400px]">
-            <div
-              class="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition transform hover:scale-105"
-            >
-              <div class="h-6 bg-gray-200 flex items-center px-3 space-x-2">
-                <span class="w-3 h-3 rounded-full bg-red-400"></span>
-                <span class="w-3 h-3 rounded-full bg-yellow-400"></span>
-                <span class="w-3 h-3 rounded-full bg-green-400"></span>
-              </div>
-              <img
-                src="./media/weather-screenshot.png"
-                alt="Screenshot of the React Weather app"
-                class="aspect-video p-1 object-cover rounded"
-              />
-            </div>
-            <h2 class="font-medium text-xl my-3 text-gray-800">
-              React Weather App
-            </h2>
-            <p class="text-gray-800">
-              A responsive weather app built with React that shows current
-              conditions and a 5-day forecast for any location. It uses a
-              weather API and geolocation to get your current weather, supports
-              Celsius and Fahrenheit, and features dynamic icons that change
-              based on weather and time of day.
-            </p>
-            <div class="my-3">
-              <span
-                class="bg-teal-100 text-teal-700 text-sm font-medium px-2 py-1 rounded"
-                >React</span
-              >
-              <span
-                class="bg-teal-100 text-teal-700 text-sm font-medium px-2 py-1 rounded"
-                >API</span
-              >
-              <span
-                class="bg-teal-100 text-teal-700 text-sm font-medium px-2 py-1 rounded"
-                >Geolocation</span
-              >
-            </div>
-            <div class="my-3">
-              <a
-                href="https://stellar-stardust-85a3b3.netlify.app/"
-                target="_blank"
-                class="font-medium text-teal-700"
-                >Live Demo</a
-              >
-              <a
-                href="https://github.com/Lilla-ctrl/react-weather-app.git"
-                target="_blank"
-                class="font-medium text-teal-700 mx-3"
-                >Code</a
-              >
-            </div>
-          </div>
-          <div class="text-center sm:text-left w-full max-w-[400px]">
-            <div
-              class="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition transform hover:scale-105"
-            >
-              <div class="h-6 bg-gray-200 flex items-center px-3 space-x-2">
-                <span class="w-3 h-3 rounded-full bg-red-400"></span>
-                <span class="w-3 h-3 rounded-full bg-yellow-400"></span>
-                <span class="w-3 h-3 rounded-full bg-green-400"></span>
-              </div>
-              <img
-                src="./media/clocks-screenshot.png"
-                alt="Screenshot of the World Clock project"
-                class="aspect-video object-cover rounded"
-              />
-            </div>
-            <h2 class="font-medium text-xl my-3 text-gray-800">World Clock</h2>
-            <p class="text-gray-800">
-              A real-time world clock app that displays the current time in
-              selected cities and the user's location. Built with vanilla
-              JavaScript and API integration, it features a clean layout using
-              Bootstrap and updates automatically.
-            </p>
-            <div class="my-3">
-              <span
-                class="bg-teal-100 text-teal-700 text-sm font-medium px-2 py-1 rounded"
-                >JavaScript</span
-              >
-              <span
-                class="bg-teal-100 text-teal-700 text-sm font-medium px-2 py-1 rounded"
-                >API</span
-              >
-              <span
-                class="bg-teal-100 text-teal-700 text-sm font-medium px-2 py-1 rounded"
-                >Real-Time Functionality</span
-              >
-            </div>
-            <div class="my-3">
-              <a
-                href="https://fascinating-sunflower-3e561e.netlify.app/"
-                target="_blank"
-                class="font-medium text-teal-700"
-                >Live Demo</a
-              >
-              <a
-                href="https://github.com/Lilla-ctrl/world-clock.git"
-                target="_blank"
-                class="font-medium text-teal-700 mx-3"
-                >Code</a
-              >
-            </div>
-          </div>
-          <div class="text-center sm:text-left w-full max-w-[400px]">
+          <!-- Figma to Code Screenshot -->
+          <div class="w-full md:w-1/2">
             <div
               class="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition transform hover:scale-105"
             >
@@ -369,97 +249,66 @@
                 class="aspect-video object-cover rounded"
               />
             </div>
-            <h2 class="font-medium text-xl my-3 text-gray-800">
-              Figma to Code Challenge
+          </div>
+        </div>
+        <!-- Weather App Card -->
+        <div class="flex flex-col md:flex-row items-center gap-10 px-2 py-4">
+          <!-- Weather App Content -->
+          <div class="w-full md:w-1/2 space-y-4 p-2">
+            <h2 class="text-2xl font-semibold my-3 text-gray-800">
+              React Weather App
             </h2>
-            <p class="text-gray-800">
-              A responsive website based on The Wheel of Time TV series. The
-              main goal was to recreate a provided Figma design using CSS Grid,
-              Flexbox, and responsive layouts. This project showcases my ability
-              to translate a static design into clean, structured code using
-              semantic HTML and modern CSS techniques.
+            <p class="text-gray-600 leading-relaxed text-justify">
+              I engineered a real-time weather platform inspired by
+              industry-standard dashboard patterns to ensure a familiar,
+              intuitive user experience. I focused on the technical complexity
+              of synchronizing live API data with Geolocation services,
+              implementing conditional logic to handle metric/imperial toggles
+              and dynamic asset rendering. This project demonstrates my ability
+              to take high-level UX benchmarks and translate them into a
+              functional, data-rich React application.
             </p>
-            <div class="my-3">
-              <span
-                class="bg-teal-100 text-teal-700 text-sm font-medium px-2 py-1 rounded"
-                >CSS Grid</span
-              >
-              <span
-                class="bg-teal-100 text-teal-700 text-sm font-medium px-2 py-1 rounded"
-                >Flexbox</span
-              >
-              <span
-                class="bg-teal-100 text-teal-700 text-sm font-medium px-2 py-1 rounded"
-                >Media Queries</span
-              >
-            </div>
-            <div class="my-3">
+            <ul class="text-teal-700 font-medium space-y-1">
+              <li>
+                • Synchronized real-time weather data via REST API integration
+              </li>
+              <li>
+                • Implemented conditional rendering for dynamic assets and
+                location-based state
+              </li>
+            </ul>
+            <div class="flex justify-center gap-4 pt-2">
               <a
-                href="https://taupe-travesseiro-6e96eb.netlify.app/"
+                href="https://stellar-stardust-85a3b3.netlify.app/"
                 target="_blank"
-                class="font-medium text-teal-700"
+                rel="noopener noreferrer"
+                class="bg-teal-600 text-white px-6 py-2 rounded-xl hover:bg-teal-700"
                 >Live Demo</a
               >
               <a
-                href="https://github.com/Lilla-ctrl/responsive-project-wheel-of-time.git"
+                href="https://github.com/Lilla-ctrl/react-weather-app.git"
                 target="_blank"
-                class="font-medium text-teal-700 mx-3"
-                >Code</a
+                rel="noopener noreferrer"
+                class="border border-teal-600 text-teal-600 px-6 py-2 rounded-xl hover:bg-teal-50"
+                >View Code</a
               >
             </div>
           </div>
-          <div class="text-center sm:text-left w-full max-w-[400px]">
+          <!-- Weather App Screenshot -->
+          <div class="w-full md:w-1/2">
             <div
-              class="rounded-xl overflow-hidden max-w-[400px] shadow-lg hover: shadow-2xl transition transform hover:scale-105"
+              class="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition transform hover:scale-105"
             >
               <div class="h-6 bg-gray-200 flex items-center px-3 space-x-2">
-                <span class="h-3 w-3 rounded-full bg-red-400"></span>
-                <span class="h-3 w-3 rounded-full bg-yellow-400"></span>
-                <span class="h-3 w-3 rounded-full bg-green-400"></span>
+                <span class="w-3 h-3 rounded-full bg-red-400"></span>
+                <span class="w-3 h-3 rounded-full bg-yellow-400"></span>
+                <span class="w-3 h-3 rounded-full bg-green-400"></span>
               </div>
               <img
-                src="./media/haiku-screenshot.png"
-                alt="Screenshot of the AI Haiku Generator"
-                class="aspect-video object-cover rounded"
+                src="./media/weather-screenshot.png"
+                alt="Screenshot of the React Job Application Tracker project"
+                class="aspect-video object-cover"
               />
-            </div>
-            <h2 class="font-medium text-xl my-3 text-gray-800">
-              AI Haiku Generator
-            </h2>
-            <p class="text-gray-800">
-              This fun and interactive app uses AI to create original haikus
-              based on any topic the user enters. Built with vanilla JavaScript,
-              Axios, and a playful, mobile-friendly design, the project
-              demonstrates how front-end development and creative technologies
-              can come together to produce an engaging user experience.
-            </p>
-            <div class="my-3">
-              <span
-                class="bg-teal-100 text-teal-700 text-sm font-medium px-2 py-1 rounded"
-                >AI Integration</span
-              >
-              <span
-                class="bg-teal-100 text-teal-700 text-sm font-medium px-2 py-1 rounded"
-                >Typewriter</span
-              >
-              <span
-                class="bg-teal-100 text-teal-700 text-sm font-medium px-2 py-1 rounded"
-                >Responsive</span
-              >
-            </div>
-            <div class="my-3">
-              <a
-                href="https://stupendous-elf-e9434b.netlify.app/"
-                target="_blank"
-                class="font-medium text-teal-700"
-                >Live Demo</a
-              >
-              <a
-                href="https://github.com/Lilla-ctrl/haiku-generator.git"
-                target="_blank"
-                class="font-medium text-teal-700 mx-3"
-                >Code</a
-              >
             </div>
           </div>
         </div>
@@ -469,30 +318,39 @@
         class="bg-gray-100 p-6 rounded-xl shadow-md border border-gray-200"
       >
         <h1 class="font-medium text-3xl mb-3 text-teal-600">About Me</h1>
-        <p class="text-gray-800 md:text-lg">
-          Hi! I'm a front-end developer with a background in warehouse
-          management and system support — not the most typical path, but one
-          that's taught me a lot about structure, efficiency, and solving
-          problems under pressure.
-          <br /><br />
-          I started learning to code online while working full-time, driven by a
-          need for more creativity and curiosity about how things work behind
-          the screen. I recently graduated from the
-          <a
-            class="font-medium text-teal-700"
-            href="https://www.shecodes.io/diplomas/aa40cf8957ad8c7457550018ca03ba56"
-            target="_blank"
-            >SheCodes Front-End Developer</a
-          >
-          course, where I built real-world projects that deepened my skills in
-          responsive design, JavaScript, and modern frameworks.
-          <br /><br />
-          What I bring to the table is more than just HTML and JavaScript. I'm
-          detail-oriented, dependable, and used to adapting fast when systems
-          (or priorities) change. I love building interfaces that are both
-          intuitive and visually appealing, and I'm ready to keep learning and
-          growing as part of a collaborative team.
-        </p>
+        <div class="text-gray-800 md:text-lg">
+          <p class="font-bold mb-2">
+            Systems thinker. Narrative builder. Front-End Developer.
+          </p>
+          <p class="mb-2 text-justify">
+            My career has always been about structure, efficiency, and making
+            complex systems move. Whether I was acting as a "manual
+            load-balancer" in warehouse logistics or leading international
+            Erasmus+ projects across the EU, I've spent years debugging
+            real-world workflows and solving problems under pressure.
+          </p>
+          <p class="mb-2 text-justify">
+            That obsession with how things work led me to the screen. I've
+            traded physical inventory for digital architecture, translating my
+            background in operational leadership into clean, responsive code. As
+            a
+            <a
+              class="font-medium text-teal-700"
+              href="https://www.shecodes.io/diplomas/aa40cf8957ad8c7457550018ca03ba56"
+              target="_blank"
+              rel="noopener noreferrer"
+              >SheCodes Front-End Developer</a
+            >
+            graduate specializing in the React and Supabase ecosystem, I don't
+            just build interfaces, I build reliable digital tools.
+          </p>
+          <p class="text-justify">
+            I bring the precision of a logistics lead and the professional
+            maturity of a project manager to every codebase. I'm ready to
+            leverage my technical foundation to build intuitive, high-fidelity
+            web experiences within a collaborative engineering team.
+          </p>
+        </div>
       </section>
 
       <section id="skills" class="mt-12">
@@ -503,7 +361,7 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm">
             <h3 class="font-bold text-gray-800 mb-4 flex items-center gap-2">
-              <span class="text-teal-600">code</span> Engineering
+              Engineering
             </h3>
             <div class="flex flex-wrap gap-2">
               <span
@@ -527,7 +385,7 @@
 
           <div class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm">
             <h3 class="font-bold text-gray-800 mb-4 flex items-center gap-2">
-              <span class="text-teal-600">palette</span> UI & Design
+              UI & Design
             </h3>
             <div class="flex flex-wrap gap-2">
               <span
@@ -551,7 +409,7 @@
 
           <div class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm">
             <h3 class="font-bold text-gray-800 mb-4 flex items-center gap-2">
-              <span class="text-teal-600">terminal</span> Tools & SEO
+              Tools & SEO
             </h3>
             <div class="flex flex-wrap gap-2">
               <span
@@ -574,9 +432,36 @@
           </div>
         </div>
       </section>
+      <div class="text-center mt-10 p-8 border-t border-gray-100">
+        <p class="text-gray-600 mb-4">
+          Interested in seeing more of my technical experiments?
+        </p>
+        <a
+          href="https://github.com/Lilla-ctrl"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 text-teal-600 font-semibold hover:text-teal-700 transition"
+        >
+          View my "Experimental Lab" on GitHub
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M17 8l4 4m0 0l-4 4m4-4H3"
+            />
+          </svg>
+        </a>
+      </div>
       <footer
         id="contact"
-        class="bg-teal-600 text-white text-2xl py-5 px-12 flex justify-between mt-3 rounded-xl shadow-md border border-gray-200"
+        class="bg-teal-600 text-white text-2xl py-4 px-12 flex justify-between mt-3 rounded-xl shadow-md border border-gray-200"
       >
         <span> Let's work together! </span>
         <span> <a href="mailto:lillat.developer@gmail.com">Email</a> </span>
