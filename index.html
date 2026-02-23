@@ -132,14 +132,84 @@
           >
         </div>
       </header>
-      <section id="projects" class="mb-6">
-        <h1 class="font-medium text-3xl text-teal-600 ml-2">Projects</h1>
-        <!-- Job Tracker Card -->
+      <section id="projects" class="mb-20">
+        <h1 class="font-medium text-3xl text-teal-600 ml-2">
+          Technical Projects
+        </h1>
+        <!-- Chingu Card -->
         <div class="flex flex-col md:flex-row items-center gap-10 px-2 py-4">
+          <!-- Chingu Content -->
+          <div class="w-full md:w-1/2 space-y-4 p-2">
+            <h2 class="text-2xl font-semibold tracking-tight text-gray-800">
+              Member Directory
+              <span class="text-teal-600 font-light">/</span>
+              <span class="text-lg font-normal text-teal-600">
+                Team Project (Chingu Voyage)
+              </span>
+            </h2>
+            <p class="text-gray-600 leading-relaxed text-justify">
+              Collaborated within a global, asynchronous team to build a
+              data-driven member directory. When the team size unexpectedly
+              reduced mid-voyage, I worked closely with the remaining developer
+              to ensure delivery, taking primary responsibility for the List
+              Page and the shared search/filtering logic used across both list
+              and map views. In the absence of a dedicated designer, we adopted
+              a "code-first" approach to UI, collectively assembling a
+              functional and responsive interface using a shared React component
+              library. This experience centered on maintaining progress through
+              Scrum ceremonies, including weekly sprints and planning, while
+              troubleshooting cross-component logic under a condensed team
+              structure.
+            </p>
+            <ul class="text-teal-700 font-medium space-y-1">
+              <li>• Built with React, TypeScript, Tailwind CSS, & Storybook</li>
+              <li>• Workflow: Agile/Scrum & Collaborative Git (PR Reviews)</li>
+            </ul>
+            <div class="flex justify-center gap-4 pt-2">
+              <a
+                href="https://v58-tier2-team21.web.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="bg-teal-600 text-white px-6 py-2 rounded-xl hover:bg-teal-700"
+                >Live Demo</a
+              >
+              <a
+                href="https://github.com/chingu-voyages/V58-tier2-team-21.git"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="border border-teal-600 text-teal-600 px-6 py-2 rounded-xl hover:bg-teal-50"
+                >View Code</a
+              >
+            </div>
+          </div>
+          <!-- Chingu Screenshot -->
+          <div class="w-full md:w-1/2">
+            <div
+              class="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition transform hover:scale-105"
+            >
+              <div class="h-6 bg-gray-200 flex items-center px-3 space-x-2">
+                <span class="w-3 h-3 rounded-full bg-red-400"></span>
+                <span class="w-3 h-3 rounded-full bg-yellow-400"></span>
+                <span class="w-3 h-3 rounded-full bg-green-400"></span>
+              </div>
+              <img
+                src="./media/chingu.png"
+                alt="Screenshot of the React Job Application Tracker project"
+                class="aspect-video object-cover"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- Job Tracker Card -->
+        <div class="flex flex-col md:flex-row-reverse items-center gap-10 px-2 py-4 bg-gray-100 rounded-xl">
           <!-- Job Tracker Content -->
           <div class="w-full md:w-1/2 space-y-4 p-2">
             <h2 class="text-2xl font-semibold text-gray-800">
-              React Job Tracker with Backend
+              Job Tracker with Backend
+              <span class="text-teal-600 font-light">/</span>
+              <span class="text-lg font-normal text-teal-600">
+                Solo Project
+              </span>
             </h2>
             <p class="text-gray-600 leading-relaxed text-justify">
               A high-performance job application tracker built with React and
@@ -191,12 +261,16 @@
         </div>
         <!-- Figma to Code Card -->
         <div
-          class="flex flex-col md:flex-row-reverse items-center gap-10 bg-gray-100 rounded-xl  px-2 py-4"
+          class="flex flex-col md:flex-row items-center gap-10 px-2 py-4"
         >
           <!-- Figma to Code Content -->
           <div class="w-full md:w-1/2 space-y-4 p-2">
             <h2 class="font-semibold text-2xl my-3 text-gray-800">
               Figma to Code Challenge
+              <span class="text-teal-600 font-light">/</span>
+              <span class="text-lg font-normal text-teal-600">
+                Solo Project
+              </span>
             </h2>
             <p class="text-gray-600 leading-relaxed text-justify">
               I engineered a responsive "Wheel of Time" fan site by adapting and
@@ -252,11 +326,15 @@
           </div>
         </div>
         <!-- Weather App Card -->
-        <div class="flex flex-col md:flex-row items-center gap-10 px-2 py-4">
+        <div class="flex flex-col md:flex-row-reverse items-center gap-10 px-2 py-4 bg-gray-100 rounded-xl">
           <!-- Weather App Content -->
           <div class="w-full md:w-1/2 space-y-4 p-2">
             <h2 class="text-2xl font-semibold my-3 text-gray-800">
               React Weather App
+              <span class="text-teal-600 font-light">/</span>
+              <span class="text-lg font-normal text-teal-600">
+                Solo Project
+              </span>
             </h2>
             <p class="text-gray-600 leading-relaxed text-justify">
               I engineered a real-time weather platform inspired by
